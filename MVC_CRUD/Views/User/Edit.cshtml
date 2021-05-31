@@ -1,0 +1,109 @@
+﻿@model MVC_CRUD.Models.User;
+@* 
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Edit Enrollee Information";
+}
+<h4> Update Form </h4>
+
+<form asp-action="edit" method="post">
+    <input type="hidden" asp-for="StudentCode" />
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="control-label col-sm-3">First Name:</label>
+                <div class="col-sm-8">
+                    <input asp-for="FirstName" class="form-control">
+                    <span class="text-danger" asp-validation-for="FirstName"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-3">Middle Name:</label>
+                <div class="col-sm-8">
+                    <input asp-for="MiddleName" class="form-control">
+                    <span class="text-danger" asp-validation-for="MiddleName"></span>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-3">Last Name:</label>
+                <div class="col-sm-8">
+                    <input asp-for="LastName" class="form-control">
+                    <span class="text-danger" asp-validation-for="LastName"></span>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2">Age:</label>
+                <div class="col-sm-8">
+                    <input asp-for="Age" class="form-control">
+                    <span class="text-danger" asp-validation-for="Age"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2">Address:</label>
+                <div class="col-sm-8">
+                    <input asp-for="Address" class="form-control">
+                    <span class="text-danger" asp-validation-for="Address"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6">
+
+            <div class="form-group">
+                <label class="control-label col-sm-4"> Citizenship:</label>
+                <div class="col-sm-8">
+                    <input asp-for="Citizenship" class="form-control">
+                    <span class="text-danger" asp-validation-for="Citizenship"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-4"> Contact No.:</label>
+                <div class="col-sm-8">
+                    <input asp-for="Contact" class="form-control">
+                    <span class="text-danger" asp-validation-for="Contact"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-4"> Desired Course:</label>
+                <div class="col-sm-8">
+                    <input asp-for="Course" class="form-control">
+                    <span class="text-danger" asp-validation-for="Course"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2 ">Year:</label>
+                <div class="col-sm-8">
+                    <input asp-for="Year" class="form-control">
+                    <span class="text-danger" asp-validation-for="Year"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2 ">Campus:</label>
+                <div class="col-sm-8">
+                    <input asp-for="Campus" class="form-control">
+                    <span class="text-danger" asp-validation-for="Campus"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2">
+                    <button type="submit" class="btn btn-outline-success">Update</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</form>
